@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PROJECTS\\VisualStudio\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj": {}
+    "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj": {}
   },
   "projects": {
-    "E:\\PROJECTS\\VisualStudio\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj": {
+    "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PROJECTS\\VisualStudio\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
+        "projectUniqueName": "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
         "projectName": "XboxToKeyboard",
-        "projectPath": "E:\\PROJECTS\\VisualStudio\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
+        "projectPath": "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
         "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
-        "outputPath": "E:\\PROJECTS\\VisualStudio\\XboxToKeyboard\\XboxToKeyboard\\obj\\",
+        "outputPath": "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

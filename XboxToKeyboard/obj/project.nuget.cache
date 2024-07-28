@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vfzm6a7HvGPrYVKn2Jav9O4rjeBnSNhvsWA7m2JasAS40XatgDBskjMw4QVPiKcfnVCU20ZLCosA3A3U0qf9zA==",
+  "dgSpecHash": "CRy1LYyGDMU=",
   "success": true,
-  "projectFilePath": "E:\\PROJECTS\\VisualStudio\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
+  "projectFilePath": "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\tomas\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
