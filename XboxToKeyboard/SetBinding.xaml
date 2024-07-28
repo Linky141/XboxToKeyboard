@@ -1,0 +1,13 @@
+﻿<Window x:Class="XboxToKeyboard.SetBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XboxToKeyboard"
+        mc:Ignorable="d"
+        Title="SetBinding" Height="115" Width="183" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="Cancel" x:Name="buttonCancel" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top" Click="buttonCancel_Click" Width="163"/>
+        <Label Content="Press button or cancel" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="163"/>
+    </Grid>
+</Window>

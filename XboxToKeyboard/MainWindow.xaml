@@ -1,0 +1,40 @@
+﻿<Window x:Class="XboxToKeyboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XboxToKeyboard"
+        mc:Ignorable="d"
+        Title="Xbox to keyboard" Height="476" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <ListBox x:Name="listboxConsole" Margin="513,10,10,0" Height="414" VerticalAlignment="Top"/>
+        <Label Content="Status: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelConnectionStatus" Content="---" HorizontalAlignment="Left" Margin="58,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonConnectController" Content="Connect controller" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="71" Width="498" Click="buttonConnectController_Click"/>
+        <Button x:Name="buttonXboxLeftTrigger" Content="" Width="60" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Click="buttonXboxLeftTrigger_Click"/>
+        <Button x:Name="buttonXboxLeftBumper" Content="" Width="60" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Click="buttonXboxLeftBumper_Click"/>
+        <Button x:Name="buttonXboxRightTrigger" Content="" Width="60" HorizontalAlignment="Left" Margin="447,124,0,0" VerticalAlignment="Top" Click="buttonXboxRightTrigger_Click"/>
+        <Button x:Name="buttonXboxRightBumper" Content="" Width="60" HorizontalAlignment="Left" Margin="447,149,0,0" VerticalAlignment="Top" Click="buttonXboxRightBumper_Click"/>
+        <Button x:Name="buttonXboxLeftAnalogUp" Content="" Width="60" HorizontalAlignment="Left" Margin="75,172,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogUp_Click"/>
+        <Button x:Name="buttonXboxLeftAnalogLeft" Content="" Width="60" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogLeft_Click"/>
+        <Button x:Name="buttonXboxLeftAnalogRight" Content="" Width="60" HorizontalAlignment="Left" Margin="140,197,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogRight_Click"/>
+        <Button x:Name="buttonXboxLeftAnalogDown" Content="" Width="60" HorizontalAlignment="Left" Margin="75,222,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogDown_Click"/>
+        <Button x:Name="buttonXboxDpadUp" Content="" Width="60" HorizontalAlignment="Left" Margin="128,286,0,0" VerticalAlignment="Top" Click="buttonXboxDpadUp_Click"/>
+        <Button x:Name="buttonXboxDpadLeft" Content="" Width="60" HorizontalAlignment="Left" Margin="69,312,0,0" VerticalAlignment="Top" Click="buttonXboxDpadLeft_Click"/>
+        <Button x:Name="buttonXboxDpadRight" Content="" Width="60" HorizontalAlignment="Left" Margin="189,312,0,0" VerticalAlignment="Top" Click="buttonXboxDpadRight_Click"/>
+        <Button x:Name="buttonXboxDpadDown" Content="" Width="60" HorizontalAlignment="Left" Margin="128,336,0,0" VerticalAlignment="Top" Click="buttonXboxDpadDown_Click"/>
+        <Button x:Name="buttonXboxRightAnalogUp" Content="" Width="60" HorizontalAlignment="Left" Margin="346,287,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogUp_Click"/>
+        <Button x:Name="buttonXboxRightAnalogLeft" Content="" Width="60" HorizontalAlignment="Left" Margin="281,312,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogLeft_Click"/>
+        <Button x:Name="buttonXboxRightAnalogRight" Content="" Width="60" HorizontalAlignment="Left" Margin="410,312,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogRight_Click"/>
+        <Button x:Name="buttonXboxRightAnalogDown" Content="" Width="60" HorizontalAlignment="Left" Margin="346,336,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogDown_Click"/>
+        <Button x:Name="buttonXboxY" Content="" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Click="buttonXboxY_Click" Margin="388,172,0,0"/>
+        <Button x:Name="buttonXboxX" Content="" Width="60" HorizontalAlignment="Left" Margin="328,197,0,0" VerticalAlignment="Top" Click="buttonXboxX_Click"/>
+        <Button x:Name="buttonXboxB" Content="" Width="60" HorizontalAlignment="Left" Margin="448,197,0,0" VerticalAlignment="Top" Click="buttonXboxB_Click"/>
+        <Button x:Name="buttonXboxA" Content="" Width="60" HorizontalAlignment="Left" Margin="388,222,0,0" VerticalAlignment="Top" Click="buttonXboxA_Click"/>
+        <Button x:Name="buttonXboxSelect" Content="" Width="60" HorizontalAlignment="Left" Margin="202,232,0,0" VerticalAlignment="Top" Click="buttonXboxSelect_Click"/>
+        <Button x:Name="buttonXboxStart" Content="" Width="60" HorizontalAlignment="Left" Margin="268,232,0,0" VerticalAlignment="Top" Click="buttonXboxStart_Click"/>
+        <Button x:Name="buttonSaveConfig" Content="Save Config" Width="102" HorizontalAlignment="Left" Margin="405,378,0,0" Click="buttonSaveConfig_Click" Height="46" VerticalAlignment="Top"/>
+        <Button x:Name="buttonXboxLeftAnalog" Content="" Width="60" HorizontalAlignment="Left" Margin="75,197,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalog_Click"/>
+        <Button x:Name="buttonXboxRightAnalog" Content="" Width="60" HorizontalAlignment="Left" Margin="346,312,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalog_Click"/>
+    </Grid>
+</Window>
