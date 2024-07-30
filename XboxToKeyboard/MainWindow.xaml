@@ -5,36 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XboxToKeyboard"
         mc:Ignorable="d"
-        Title="Xbox to keyboard" Height="476" Width="800" ResizeMode="NoResize">
+        Title="Xbox to keyboard" Height="554" Width="1124" ResizeMode="NoResize"
+                     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
     <Grid>
-        <ListBox x:Name="listboxConsole" Margin="513,10,10,0" Height="414" VerticalAlignment="Top"/>
+        <ListBox x:Name="listboxConsole" Margin="684,10,10,0" Height="515" VerticalAlignment="Top"/>
         <Label Content="Status: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labelConnectionStatus" Content="---" HorizontalAlignment="Left" Margin="58,10,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="buttonConnectController" Content="Connect controller" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="71" Width="498" Click="buttonConnectController_Click"/>
-        <Button x:Name="buttonXboxLeftTrigger" Content="" Width="60" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Click="buttonXboxLeftTrigger_Click"/>
-        <Button x:Name="buttonXboxLeftBumper" Content="" Width="60" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Click="buttonXboxLeftBumper_Click"/>
-        <Button x:Name="buttonXboxRightTrigger" Content="" Width="60" HorizontalAlignment="Left" Margin="447,124,0,0" VerticalAlignment="Top" Click="buttonXboxRightTrigger_Click"/>
-        <Button x:Name="buttonXboxRightBumper" Content="" Width="60" HorizontalAlignment="Left" Margin="447,149,0,0" VerticalAlignment="Top" Click="buttonXboxRightBumper_Click"/>
-        <Button x:Name="buttonXboxLeftAnalogUp" Content="" Width="60" HorizontalAlignment="Left" Margin="75,172,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogUp_Click"/>
-        <Button x:Name="buttonXboxLeftAnalogLeft" Content="" Width="60" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogLeft_Click"/>
-        <Button x:Name="buttonXboxLeftAnalogRight" Content="" Width="60" HorizontalAlignment="Left" Margin="140,197,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogRight_Click"/>
-        <Button x:Name="buttonXboxLeftAnalogDown" Content="" Width="60" HorizontalAlignment="Left" Margin="75,222,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogDown_Click"/>
-        <Button x:Name="buttonXboxDpadUp" Content="" Width="60" HorizontalAlignment="Left" Margin="128,286,0,0" VerticalAlignment="Top" Click="buttonXboxDpadUp_Click"/>
-        <Button x:Name="buttonXboxDpadLeft" Content="" Width="60" HorizontalAlignment="Left" Margin="69,312,0,0" VerticalAlignment="Top" Click="buttonXboxDpadLeft_Click"/>
-        <Button x:Name="buttonXboxDpadRight" Content="" Width="60" HorizontalAlignment="Left" Margin="189,312,0,0" VerticalAlignment="Top" Click="buttonXboxDpadRight_Click"/>
-        <Button x:Name="buttonXboxDpadDown" Content="" Width="60" HorizontalAlignment="Left" Margin="128,336,0,0" VerticalAlignment="Top" Click="buttonXboxDpadDown_Click"/>
-        <Button x:Name="buttonXboxRightAnalogUp" Content="" Width="60" HorizontalAlignment="Left" Margin="346,287,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogUp_Click"/>
-        <Button x:Name="buttonXboxRightAnalogLeft" Content="" Width="60" HorizontalAlignment="Left" Margin="281,312,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogLeft_Click"/>
-        <Button x:Name="buttonXboxRightAnalogRight" Content="" Width="60" HorizontalAlignment="Left" Margin="410,312,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogRight_Click"/>
-        <Button x:Name="buttonXboxRightAnalogDown" Content="" Width="60" HorizontalAlignment="Left" Margin="346,336,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogDown_Click"/>
-        <Button x:Name="buttonXboxY" Content="" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Click="buttonXboxY_Click" Margin="388,172,0,0"/>
-        <Button x:Name="buttonXboxX" Content="" Width="60" HorizontalAlignment="Left" Margin="328,197,0,0" VerticalAlignment="Top" Click="buttonXboxX_Click"/>
-        <Button x:Name="buttonXboxB" Content="" Width="60" HorizontalAlignment="Left" Margin="448,197,0,0" VerticalAlignment="Top" Click="buttonXboxB_Click"/>
-        <Button x:Name="buttonXboxA" Content="" Width="60" HorizontalAlignment="Left" Margin="388,222,0,0" VerticalAlignment="Top" Click="buttonXboxA_Click"/>
-        <Button x:Name="buttonXboxSelect" Content="" Width="60" HorizontalAlignment="Left" Margin="202,232,0,0" VerticalAlignment="Top" Click="buttonXboxSelect_Click"/>
-        <Button x:Name="buttonXboxStart" Content="" Width="60" HorizontalAlignment="Left" Margin="268,232,0,0" VerticalAlignment="Top" Click="buttonXboxStart_Click"/>
-        <Button x:Name="buttonSaveConfig" Content="Save Config" Width="102" HorizontalAlignment="Left" Margin="405,378,0,0" Click="buttonSaveConfig_Click" Height="46" VerticalAlignment="Top"/>
-        <Button x:Name="buttonXboxLeftAnalog" Content="" Width="60" HorizontalAlignment="Left" Margin="75,197,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalog_Click"/>
-        <Button x:Name="buttonXboxRightAnalog" Content="" Width="60" HorizontalAlignment="Left" Margin="346,312,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalog_Click"/>
+        <Button x:Name="buttonConnectController"  HorizontalAlignment="Left" Margin="155,0,0,13" VerticalAlignment="Bottom" Height="71" Width="524" Click="buttonConnectController_Click">
+            <StackPanel Orientation="Horizontal">
+                <md:PackIcon Kind="Connection" Width="16" Height="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,5,0"/>
+                <TextBlock Text="Connect controller" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxLeftTrigger" Content="" Width="60" HorizontalAlignment="Left" Margin="17,42,0,0" VerticalAlignment="Top" Click="buttonXboxLeftTrigger_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxLeftBumper" Content="" Width="60" HorizontalAlignment="Left" Margin="17,79,0,0" VerticalAlignment="Top" Click="buttonXboxLeftBumper_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxRightTrigger" Content="" Width="60" HorizontalAlignment="Left" Margin="619,42,0,0" VerticalAlignment="Top" Click="buttonXboxRightTrigger_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxRightBumper" Content="" Width="60" HorizontalAlignment="Left" Margin="619,79,0,0" VerticalAlignment="Top" Click="buttonXboxRightBumper_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxLeftAnalogUp" Content="" Width="60" HorizontalAlignment="Left" Margin="120,125,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogUp_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxLeftAnalogLeft" Content="" Width="60" HorizontalAlignment="Left" Margin="54,161,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogLeft_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxLeftAnalogRight" Content="" Width="60" HorizontalAlignment="Left" Margin="184,161,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogRight_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxLeftAnalogDown" Content="" Width="60" HorizontalAlignment="Left" Margin="120,197,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalogDown_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxDpadUp" Content="" Width="60" HorizontalAlignment="Left" Margin="229,298,0,0" VerticalAlignment="Top" Click="buttonXboxDpadUp_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxDpadLeft" Content="" Width="60" HorizontalAlignment="Left" Margin="165,324,0,0" VerticalAlignment="Top" Click="buttonXboxDpadLeft_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxDpadRight" Content="" Width="60" HorizontalAlignment="Left" Margin="294,324,0,0" VerticalAlignment="Top" Click="buttonXboxDpadRight_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxDpadDown" Content="" Width="60" HorizontalAlignment="Left" Margin="229,348,0,0" VerticalAlignment="Top" Click="buttonXboxDpadDown_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxRightAnalogUp" Content="" Width="60" HorizontalAlignment="Left" Margin="441,287,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogUp_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxRightAnalogLeft" Content="" Width="60" HorizontalAlignment="Left" Margin="377,324,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogLeft_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxRightAnalogRight" Content="" Width="60" HorizontalAlignment="Left" Margin="505,324,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogRight_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxRightAnalogDown" Content="" Width="60" HorizontalAlignment="Left" Margin="441,361,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalogDown_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxY" Content="" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Click="buttonXboxY_Click" Margin="516,137,0,0"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxX" Content="" Width="60" HorizontalAlignment="Left" Margin="451,162,0,0" VerticalAlignment="Top" Click="buttonXboxX_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxB" Content="" Width="60" HorizontalAlignment="Left" Margin="581,162,0,0" VerticalAlignment="Top" Click="buttonXboxB_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxA" Content="" Width="60" HorizontalAlignment="Left" Margin="516,187,0,0" VerticalAlignment="Top" Click="buttonXboxA_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxSelect" Content="" Width="60" HorizontalAlignment="Left" Margin="287,197,0,0" VerticalAlignment="Top" Click="buttonXboxSelect_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxStart" Content="" Width="60" HorizontalAlignment="Left" Margin="353,197,0,0" VerticalAlignment="Top" Click="buttonXboxStart_Click"/>
+        <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="lightGreen" x:Name="buttonSaveConfig" Width="140" HorizontalAlignment="Left" Margin="10,0,0,13" Click="buttonSaveConfig_Click" Height="71" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Horizontal">
+                <md:PackIcon Kind="ContentSave" Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,5,0"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxLeftAnalog" Content="" Width="60" HorizontalAlignment="Left" Margin="120,161,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalog_Click"/>
+        <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxRightAnalog" Content="" Width="60" HorizontalAlignment="Left" Margin="441,324,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalog_Click"/>
     </Grid>
 </Window>

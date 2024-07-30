@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Code\XboxToKeyboard\XboxToKeyboard\obj\Debug\net8.0-windows\
+D:\Projects\Desktop\XboxToKeyboard\XboxToKeyboard\obj\Debug\net8.0-windows\
 XboxToKeyboard
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Code\XboxToKeyboard\XboxToKeyboard\App.xaml
+D:\Projects\Desktop\XboxToKeyboard\XboxToKeyboard\App.xaml
 2-1272923600
 1734358742
 141032338051
-201-763158855
+204189189404
 MainWindow.xaml;SetBinding.xaml;
 
-False
+True
 

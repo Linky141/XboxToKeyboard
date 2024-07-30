@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XboxToKeyboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37efa6f591c141153feecd49f7c2a6f5e65a9b43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+028d58d161b218954d344f357f65c1002ba78c35")]
 [assembly: System.Reflection.AssemblyProductAttribute("XboxToKeyboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XboxToKeyboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

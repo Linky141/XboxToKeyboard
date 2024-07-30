@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj": {}
+    "D:\\Projects\\Desktop\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj": {}
   },
   "projects": {
-    "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj": {
+    "D:\\Projects\\Desktop\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
+        "projectUniqueName": "D:\\Projects\\Desktop\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
         "projectName": "XboxToKeyboard",
-        "projectPath": "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
+        "projectPath": "D:\\Projects\\Desktop\\XboxToKeyboard\\XboxToKeyboard\\XboxToKeyboard.csproj",
         "packagesPath": "C:\\Users\\tomas\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\XboxToKeyboard\\XboxToKeyboard\\obj\\",
+        "outputPath": "D:\\Projects\\Desktop\\XboxToKeyboard\\XboxToKeyboard\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,6 +45,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -78,7 +85,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
