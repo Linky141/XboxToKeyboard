@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using SharpDX.XInput;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Converters;
 using XboxToKeyboard.Utils;
@@ -14,16 +15,30 @@ public partial class MainWindow : Window
     ConnectionStatusManager connectionStatusManager;
     GamepadManager gamePad;
     GamePadBinding binding;
+    short thumbstickDeadzone;
+    private const string _version = "Beta 1.0";
+
+    private readonly static string _configPath = "Config.json";
+    private readonly static string _thumbstickDeadzoneConfigPath = "ThumbstickDeadzoneConfig.json";
     public MainWindow()
     {
         InitializeComponent();
+        windowMainWindow.Title = "Xbox to keyboard (" + _version + ")";
         consoleManager = new ConsoleManager(listboxConsole);
         connectionStatusManager = new ConnectionStatusManager(labelConnectionStatus, buttonConnectController);
         gamePad = new GamepadManager(connectionStatusManager, consoleManager, this.Dispatcher);
-        binding = Serializer.DeserializeFromFile();
+        binding = Serializer.DeserializeFromFile<GamePadBinding>(_configPath);
         if(binding == null ) {
             binding = new GamePadBinding();
         }
+
+        thumbstickDeadzone = Serializer.DeserializeFromFile<short>(_thumbstickDeadzoneConfigPath);
+        if(thumbstickDeadzone == 0 )
+        {
+            thumbstickDeadzone = 5000;
+        }
+        gamePad.SetThumbstickDeadzone(thumbstickDeadzone);
+
         UpdateConfig();
 
         connectionStatusManager.Disconnected();
@@ -384,7 +399,7 @@ public partial class MainWindow : Window
 
     private void buttonSaveConfig_Click(object sender, RoutedEventArgs e)
     {
-        binding.SerializeToFile();
+        binding.SerializeToFile(_configPath);
     }
 
     private void buttonXboxLeftAnalog_Click(object sender, RoutedEventArgs e)
@@ -407,5 +422,11 @@ public partial class MainWindow : Window
             binding.RightAnalog = setBinding.KeyPressed();
             UpdateConfig();
         }
+    }
+
+    private void buttonSettings_Click(object sender, RoutedEventArgs e)
+    {
+        SettingsWindow settingsWindow = new SettingsWindow(gamePad);
+        settingsWindow.ShowDialog();
     }
 }

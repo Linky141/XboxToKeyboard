@@ -87,3 +87,5 @@ D:\Projects\Desktop\XboxToKeyboard\XboxToKeyboard\obj\Debug\net8.0-windows\refin
 D:\Projects\Desktop\XboxToKeyboard\XboxToKeyboard\obj\Debug\net8.0-windows\XboxToKeyboard.pdb
 D:\Projects\Desktop\XboxToKeyboard\XboxToKeyboard\obj\Debug\net8.0-windows\XboxToKeyboard.genruntimeconfig.cache
 D:\Projects\Desktop\XboxToKeyboard\XboxToKeyboard\obj\Debug\net8.0-windows\ref\XboxToKeyboard.dll
+D:\Projects\Desktop\XboxToKeyboard\XboxToKeyboard\obj\Debug\net8.0-windows\SettingsWindow.g.cs
+D:\Projects\Desktop\XboxToKeyboard\XboxToKeyboard\obj\Debug\net8.0-windows\SettingsWindow.baml

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XboxToKeyboard"
         mc:Ignorable="d"
-        Title="Xbox to keyboard" Height="554" Width="1124" ResizeMode="NoResize"
+         Height="554" Width="1124" ResizeMode="NoResize"
                      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
      TextElement.FontWeight="Regular"
@@ -14,7 +14,7 @@
      TextOptions.TextRenderingMode="Auto"
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}"
-        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes" x:Name="windowMainWindow">
     <Grid>
         <ListBox x:Name="listboxConsole" Margin="684,10,10,0" Height="515" VerticalAlignment="Top"/>
         <Label Content="Status: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
@@ -54,5 +54,10 @@
         </Button>
         <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxLeftAnalog" Content="" Width="60" HorizontalAlignment="Left" Margin="120,161,0,0" VerticalAlignment="Top" Click="buttonXboxLeftAnalog_Click"/>
         <Button Style="{StaticResource MaterialDesignOutlinedButton}" x:Name="buttonXboxRightAnalog" Content="" Width="60" HorizontalAlignment="Left" Margin="441,324,0,0" VerticalAlignment="Top" Click="buttonXboxRightAnalog_Click"/>
+        <Button x:Name="buttonSettings" Style="{StaticResource MaterialDesignFlatButton}" HorizontalAlignment="Left" Margin="10,0,0,89" Width="78" Click="buttonSettings_Click" Height="32" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Horizontal">
+                <md:PackIcon Kind="settings" Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,5,0"/>
+            </StackPanel>
+        </Button>
     </Grid>
 </Window>

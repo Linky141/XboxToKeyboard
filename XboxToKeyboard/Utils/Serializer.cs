@@ -5,29 +5,27 @@ namespace XboxToKeyboard.Utils;
 
 public static class Serializer
 {
-    private readonly static string _path = "Config.json";
-
-    public static void SerializeToFile(this GamePadBinding gamePadBinding)
+    public static void SerializeToFile<T>(this T value, string path)
     {
-        string json = JsonConvert.SerializeObject(gamePadBinding, Formatting.Indented);
-        File.WriteAllText(_path, json);
+        string json = JsonConvert.SerializeObject(value, Formatting.Indented);
+        File.WriteAllText(path, json);
     }
 
-    public static GamePadBinding DeserializeFromFile()
+    public static T? DeserializeFromFile<T>(string path)
     {
         try
         {
-            if (!File.Exists(_path))
+            if (!File.Exists(path))
             {
-                return null;
+                return default;
             }
 
-            string json = File.ReadAllText(_path);
-            return JsonConvert.DeserializeObject<GamePadBinding>(json);
+            string json = File.ReadAllText(path);
+            return JsonConvert.DeserializeObject<T>(json);
         }
         catch (Exception)
         {
-            return null;
+            return default;
         }
     }
 }

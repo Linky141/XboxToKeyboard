@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Projects\Desktop\XboxToKeyboard\XboxToKeyboard\App.xaml
-2-1272923600
+3-506856111
 1734358742
-12-1621203491
+13169916722
 204189189404
-MainWindow.xaml;SetBinding.xaml;
+MainWindow.xaml;SetBinding.xaml;SettingsWindow.xaml;
 
 False
 
